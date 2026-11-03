@@ -1,0 +1,9 @@
+{
+  "name": "budarina-card-viewer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "PORT=5187 node server.mjs",
+    "check": "node --check dist/viewer.js && node --check dist/lib/card-link.js && node --check dist/lib/butterflies.js && node --check dist/lib/card-rotation.js"
+  }
+}

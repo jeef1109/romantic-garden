@@ -1,0 +1,14 @@
+{
+  "name": "romantic-garden",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "check": "node --check dist/app.js && node --check dist/lib/card-motion.js && node --check dist/lib/card-state.js && node --check dist/lib/card-export.js && node --check dist/lib/flowers-3d.js && node --check dist/lib/card-share.js && node --check dist/lib/card-link.js && node --check dist/lib/butterflies.js && node --check dist/lib/card-rotation.js",
+    "dev:viewer": "npm --prefix viewer run dev",
+    "check:all": "npm run check && npm --prefix viewer run check"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}

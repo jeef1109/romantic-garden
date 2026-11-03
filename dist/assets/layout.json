@@ -1,0 +1,150 @@
+{
+  "width": 1920,
+  "height": 1381,
+  "cards": {
+    "top": {
+      "x": 540,
+      "y": 31,
+      "width": 843,
+      "height": 559.609
+    },
+    "bottom": {
+      "x": 540,
+      "y": 795,
+      "width": 843,
+      "height": 559.609
+    }
+  },
+  "plants": [
+    {
+      "id": "plant-00",
+      "source": "flower-00",
+      "card": "bottom",
+      "x": 626.0,
+      "y": 801.0,
+      "width": 991.0,
+      "height": 1321.33,
+      "mirror": false
+    },
+    {
+      "id": "plant-01",
+      "source": "flower-01",
+      "card": "top",
+      "x": 598.496,
+      "y": 157.219,
+      "width": 389.605,
+      "height": 519.474,
+      "mirror": false
+    },
+    {
+      "id": "plant-02",
+      "source": "flower-02",
+      "card": "top",
+      "x": 628.99,
+      "y": 370.144,
+      "width": 246.763,
+      "height": 329.018,
+      "mirror": false
+    },
+    {
+      "id": "plant-03",
+      "source": "flower-00",
+      "card": "top",
+      "x": 968.707,
+      "y": 108.0,
+      "width": 362.722,
+      "height": 483.629,
+      "mirror": false
+    },
+    {
+      "id": "plant-04",
+      "source": "flower-03",
+      "card": "top",
+      "x": 806.607,
+      "y": 201.623,
+      "width": 299.593,
+      "height": 399.458,
+      "mirror": false
+    },
+    {
+      "id": "plant-05",
+      "source": "flower-04",
+      "card": "top",
+      "x": 741.338,
+      "y": 310.226,
+      "width": 291.569,
+      "height": 388.758,
+      "mirror": false
+    },
+    {
+      "id": "plant-06",
+      "source": "flower-05",
+      "card": "top",
+      "x": 869.199,
+      "y": 342.325,
+      "width": 355.232,
+      "height": 473.643,
+      "mirror": false
+    },
+    {
+      "id": "plant-07",
+      "source": "flower-06",
+      "card": "top",
+      "x": 1015.79,
+      "y": 287.756,
+      "width": 268.698,
+      "height": 358.264,
+      "mirror": false
+    },
+    {
+      "id": "plant-08",
+      "source": "flower-07",
+      "card": "top",
+      "x": 1073.56,
+      "y": 359.445,
+      "width": 271.774,
+      "height": 362.365,
+      "mirror": false
+    },
+    {
+      "id": "plant-09",
+      "source": "flower-07",
+      "card": "top",
+      "x": 568.0,
+      "y": 378.704,
+      "width": 206.773,
+      "height": 275.697,
+      "mirror": true
+    },
+    {
+      "id": "plant-10",
+      "source": "flower-08",
+      "card": "top",
+      "x": 875.619,
+      "y": 280.266,
+      "width": 280.334,
+      "height": 373.779,
+      "mirror": false
+    },
+    {
+      "id": "plant-11",
+      "source": "flower-09",
+      "card": "top",
+      "x": 1126.53,
+      "y": 464.837,
+      "width": 189.921,
+      "height": 253.228,
+      "mirror": false
+    },
+    {
+      "id": "plant-12",
+      "source": "flower-09",
+      "card": "top",
+      "x": 869.199,
+      "y": 469.652,
+      "width": 225.364,
+      "height": 300.485,
+      "mirror": false
+    }
+  ]
+}

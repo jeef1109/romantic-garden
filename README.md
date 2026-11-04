@@ -49,7 +49,7 @@ scripts/                模型修补脚本
 
 ## 部署与分享地址
 
-编辑器部署目录是 `dist/`，收卡页面部署目录是 `viewer/dist/`。当前线上编辑器保持私密，收卡页面允许持完整链接的人查看。
+编辑器部署目录是 `dist/`，收卡页面部署目录是 `viewer/dist/`。原 Sites 编辑器保持私密；GitHub Pages 编辑器公开可访问，收卡页面允许持完整链接的人查看。
 
 编辑器： https://budarina-flower-cards-nov02.wiliamking44.chatgpt.site/
 
@@ -69,10 +69,10 @@ Three.js 和 lz-string 的许可证保存在各自 `dist/vendor/` 目录。项�
 
 ## GitHub Pages 发布
 
-发布配置已准备在 `.github/workflows/pages.yml`。需要先在仓库 Settings → Pages 中启用 GitHub Actions 发布，并确认账号套餐支持当前仓库可见性。启用后推送 main 会自动检查并部署。
+GitHub Pages 已启用，仓库为公开仓库。`.github/workflows/pages.yml` 会在推送 main 后自动检查并部署编辑器和收卡页面。
 
-目标编辑器网址： https://jeef1109.github.io/romantic-garden/
+GitHub Pages 编辑器网址： https://jeef1109.github.io/romantic-garden/
 
-目标收卡页面： https://jeef1109.github.io/romantic-garden/viewer/
+GitHub Pages 收卡页面： https://jeef1109.github.io/romantic-garden/viewer/
 
 GitHub Pages 版本可公开访问；每个人的草稿仍只保存在各自浏览器。分享链接已配置为上面的 GitHub Pages 收卡地址。原来的 Sites 编辑器访问限制保持不变。

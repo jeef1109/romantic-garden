@@ -55,7 +55,7 @@ scripts/                模型修补脚本
 
 收卡页面： https://budarina-card-viewer-nov03.wiliamking44.chatgpt.site/
 
-迁移收卡域名时，更新 `dist/lib/card-link.js` 的 `VIEWER_ORIGIN`（并同步 `viewer/dist/lib/card-link.js`）。本地联调可设为 `http://127.0.0.1:5187`；发送给朋友时必须使用朋友可访问的线上地址。收卡页面应部署在该域名根路径。
+迁移收卡域名时，更新 `dist/lib/card-link.js` 的 `VIEWER_ORIGIN`（并同步 `viewer/dist/lib/card-link.js`）。本地联调可设为 `http://127.0.0.1:5187`；发送给朋友时必须使用朋友可访问的线上地址。收卡页面支持部署到子路径。
 
 仓库的私有设置不等同于网站访问控制。自行部署编辑器时，需要由托管平台设置登录或访问限制。卡片链接持有者能够查看并转发卡片；链接内容未加密，也无法单独撤销。浏览器草稿没有包含在仓库中。
 
@@ -66,3 +66,13 @@ scripts/                模型修补脚本
 Three.js 和 lz-string 的许可证保存在各自 `dist/vendor/` 目录。项目素材不因上传仓库而自动获得开源授权。
 
 离线互动 HTML 使用每株植物当前角度的图片图层，支持翻面与视差，不包含完整 GLB 编辑器。GLB 模型编辑在网页内完成。
+
+## GitHub Pages 发布
+
+发布配置已准备在 `.github/workflows/pages.yml`。需要先在仓库 Settings → Pages 中启用 GitHub Actions 发布，并确认账号套餐支持当前仓库可见性。启用后推送 main 会自动检查并部署。
+
+目标编辑器网址： https://jeef1109.github.io/romantic-garden/
+
+目标收卡页面： https://jeef1109.github.io/romantic-garden/viewer/
+
+GitHub Pages 版本可公开访问；每个人的草稿仍只保存在各自浏览器。分享链接已配置为上面的 GitHub Pages 收卡地址。原来的 Sites 编辑器访问限制保持不变。

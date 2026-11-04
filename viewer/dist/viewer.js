@@ -1,4 +1,4 @@
-import {decodeCardLink} from './lib/card-link.js';
+import {decodeCardLink} from './lib/card-link.js?v=github-pages-1';
 import {renderCard} from './lib/card-export.js?v=romantic-garden-1';
 import {attachCardRotation} from './lib/card-rotation.js?v=drag-flip-1';
 import {attachCardMotion} from './lib/card-motion.js';

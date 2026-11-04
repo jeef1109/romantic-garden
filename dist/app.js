@@ -1,4 +1,4 @@
-import {setupCardSharing} from './lib/card-share.js?v=share-links-1';
+import {setupCardSharing} from './lib/card-share.js?v=github-pages-1';
 import {WIDTH,HEIGHT,BASE_HEIGHT,PLANTS,clone,clamp,defaultCard,defaultBackPlants,validCard,boundsOf,hitPlant,historyStore} from './lib/card-state.js?v=two-sided-edit-1';
 import {attachCardRotation} from './lib/card-rotation.js?v=drag-flip-1';
 import {attachCardMotion} from './lib/card-motion.js';

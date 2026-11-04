@@ -1,4 +1,4 @@
-import {encodeCardLink} from './card-link.js';
+import {encodeCardLink} from './card-link.js?v=github-pages-1';
 import {downloadBlob} from './card-export.js?v=share-files-1';
 export function shareMessage(card){return `送给${card.to||'你'}的一束花\n\n${card.message}\n\n${card.from?'来自 '+card.from:'送你一点花开的心意'}`;}
 export function mailDraft(card,kind,url=null){

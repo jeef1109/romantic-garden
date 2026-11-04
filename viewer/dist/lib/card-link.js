@@ -1,13 +1,13 @@
 import LZString from '../vendor/lz-string/lz-string.js';
 import {validCard,PLANTS} from './card-state.js';
-export const VIEWER_ORIGIN='https://budarina-card-viewer-nov03.wiliamking44.chatgpt.site';
+export const VIEWER_ORIGIN='https://jeef1109.github.io/romantic-garden/viewer/';
 const numeric=['x','y','scale','rotation','pitch','yaw','depth'];
 function packPlant(p){return [PLANTS.findIndex(([s])=>s===p.source),...numeric.map(k=>Math.round((p[k]||0)*10000)/10000),p.mirror?1:0];}
 export function encodeCardLink(card,base=VIEWER_ORIGIN){
  const valid=validCard(card);if(!valid)throw Error('卡片内容不完整，请返回编辑后重试。');
  const payload=[1,crypto.randomUUID(),valid.theme==='dark'?1:0,valid.title,valid.to,valid.from,valid.message,valid.plants.map(packPlant),valid.backPlants.map(packPlant)];
  const token=LZString.compressToEncodedURIComponent(JSON.stringify(payload));if(token.length>12000)throw Error('卡片内容太多，请改用卡片文件分享。');
- return new URL('/#card='+encodeURIComponent(token),base).href;
+ const url=new URL(base);url.hash='card='+encodeURIComponent(token);return url.href;
 }
 export function decodeCardLink(hash){
  if(typeof hash!=='string'||!hash.startsWith('#card=')||hash.length>36006)throw Error('请使用朋友发来的完整卡片链接。');
